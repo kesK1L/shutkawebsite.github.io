@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиноПоиск — фильмы, рейтинги, рецензии</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-right: 1px solid #333;
+        }
+        .sidebar img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .main-content {
+            flex: 1;
+            padding: 30px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #333;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            color: #f5c518;
+            font-size: 28px;
+            margin: 0;
+        }
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .search-bar {
+            background-color: #333;
+            padding: 10px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .movie-card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: flex;
+        }
+        .movie-poster {
+            width: 150px;
+            height: 220px;
+            object-fit: cover;
+        }
+        .movie-info {
+            padding: 15px;
+            flex: 1;
+        }
+        .movie-title {
+            font-size: 18px;
+            color: #fff;
+            margin: 0 0 5px 0;
+        }
+        .movie-year {
+            color: #aaa;
+            font-size: 14px;
+        }
+        .movie-desc {
+            margin: 10px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .rating {
+            background-color: #f5c518;
+            color: #000;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Левая колонка с картинкой -->
+        <div class="sidebar">
+            <img src="https://placehold.co/250x600/1e1e1e/ffffff?text=Здесь+могла+быть+ваша+реклама" alt="Реклама">
+        </div>
+
+        <!-- Основной контент -->
+        <div class="main-content">
+            <header>
+                <h1>КиноПоиск</h1>
+                <nav>
+                    <a href="#">Фильмы</a>
+                    <a href="#">Сериалы</a>
+                    <a href="#">Рейтинги</a>
+                    <a href="#">Рецензии</a>
+                </nav>
+            </header>
+
+            <div class="search-bar">
+                🔍 Поиск фильмов и сериалов...
+            </div>
+
+            <!-- Фильм 1 -->
+            <div class="movie-card">
+                <img src="pizza.jpg" alt="Пицца в огне">
+                <div class="movie-info">
+                    <h3 class="movie-title">Пицца в огне</h3>
+                    <p class="movie-year">2025 | Драма, Комедия</p>
+                    <p class="movie-desc">Молодой курьер доставляет пиццу, но случайно попадает в эпицентр международного заговора. Главное — не испортить коробку.</p>
+                    <div class="rating">9,8</div>
+                </div>
+            </div>
+
+            <!-- Фильм 2 -->
+            <div class="movie-card">
+                <img src="neighbor.jpg" alt="Сосед снизу">
+                <div class="movie-info">
+                    <h3 class="movie-title">Сосед снизу</h3>
+                    <p class="movie-year">2024 | Ужасы, Триллер</p>
+                    <p class="movie-desc">Он не шумит. Он не стучит. Он просто... смотрит. Через вентиляцию. И оставляет тебе тапки в двери.</p>
+                    <div class="rating">8,7</div>
+                </div>
+            </div>
+
+            <!-- Фильм 3 -->
+            <div class="movie-card">
+                <img src="wifi.jpg" alt="Wi-Fi в аду">
+                <div class="movie-info">
+                    <h3 class="movie-title">Wi-Fi в аду</h3>
+                    <p class="movie-year">2026 | Фантастика, Боевик</p>
+                    <p class="movie-desc">Ангелы и демоны объединяются против главного злодея — провайдера, который отключил интернет на 3 дня.</p>
+                    <div class="rating">9,9</div>
+                </div>
+            </div>
+
+            <footer>
+                © 2025 КиноПоиск от Друга. Все совпадения — случайны. Особенно пицца.
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
